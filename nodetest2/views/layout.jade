@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Adventure
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/reset.css')
+  body
+    .wrapper
+      header.dopeness
+        h2.title
+          span.the The
+          span.adventure Adventure
+          span.builder Builder
+      .container
+        .instructions Add a sentence to the story based on the line you see below
+        #prompt.prompt Once upon a time there was a young puppy named Walter...
+        form#form.form-class(method='post', action='#')
+          input#inputBox.Textinput(type='text')
+          button#subButton(type='submit') Save
+        #storyTime.story.fade-in.is-paused
+    //script(src='script.js')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    script(src='/javascripts/global.js')
